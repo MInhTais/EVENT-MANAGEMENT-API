@@ -61,6 +61,14 @@ Xây dựng các API tuân theo chuẩn RESTful API để đảm bảo có thể
 
 - **POST /events/:id/register**: Đăng ký tham gia một sự kiện.
 
+### Cách sử dụng
+
+- **Tạo 1 cơ sở dũng liệu trong mysql tên event_db**
+- **Chỉnh sửa file kết nối với database ở file db_connect.ts**
+- **Ở thư mục root chạy npx drizzle-kit push để tạo các bảng trong event_db**
+- **cd vào thư mục script chạy bun ./scripts/send.ts để push dự liệu mẫu vào event_db**
+- **Chạy npm run dev**
+
 ## License
 
 MIT
